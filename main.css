@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.column {
+    width: 90%;
+    margin: auto;
+    height: 90%;
+}
+
+img {
+    width: 40px;
+    margin: 30px;   
+}
+
+.first-column {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.first-column img {
+    color: hsl(31, 77%, 52%);
+}
+
+.second-column  {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-column {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+}
+
+.first-column h1, .second-column h1, .third-column h1 {
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    margin-left: 26px;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend deca';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 26px;
+    margin-top: 15px;
+    width: 70%;
+}
+
+.first-column button {
+    color: hsl(31, 77%, 52%);
+}
+
+.second-column button {
+    color: hsl(184, 100%, 22%);
+}
+
+.third-column button {
+    color: hsl(184, 100%, 22%);
+}
+
+button {
+     padding: 10px 29px;
+     border: none;
+     border-radius: 20px;
+     background-color: hsl(0, 0%, 95%);
+     margin-top: 15px;
+     margin-left: 26px;
+     margin-bottom: 20px;
+     font-family: 'Lexend deca';
+     font-size: 0.9rem;
+     font-weight: lighter;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    html {
+        box-sizing: border-box;
+        font-family: 100%;
+    }
+    
+    body {
+        background-color: hsl(0, 0%, 95%);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        position: static;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        min-height: 100vh;
+        width: 60%;
+        
+    }
+
+    main div {
+        height: 60%;
+    }
+
+    .first-column  {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .third-column {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .paragraph {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    button {
+        margin-top: 150px;
+        
+    }
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+
+
